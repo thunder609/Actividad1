@@ -41,7 +41,7 @@ body{
     
 }
 img{  
-    object-fit:fill;
+    object-fit:contain;
     background: #ffff;
     margin-left:90px;
     padding-top: 40px;
@@ -51,9 +51,7 @@ img{
    align-items: center;
  
 }
-.object-fit{
-   object-fit: fill;
-}
+
 .contendor2  {
     padding-top:90px;
     display: flex;

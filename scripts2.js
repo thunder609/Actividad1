@@ -18,10 +18,12 @@ verMunecos(contItem)
 //ver muñecos paso por paramentro el contItem
 
 function verMunecos(person)
-{
+{  //desectruct solo el id , de hay  extraigo la demas data
     let item = per[person]
     img.src = item.img
      boton.textContent=item.name
+     par.textContent=item.descrip
+     //console.log("vergacion"+par.textContent)
      
  //   console.log(boton.id)
 }
@@ -77,18 +79,17 @@ boton.addEventListener('click', () => {
    
    
   
-   
+   let data=[]
     coc.style.display='none'; 
     let ac=actualizarcontador(contItem)
-             const p = per.find( (e)=> e.id ==ac );
- 
-              localStorage.setItem('per', JSON.stringify(p));
-               const li = document.createElement('contenedor2');
+            let p = per.find( (e)=> e.id ==ac );
+              data.push(p)
+              localStorage.setItem('per', JSON.stringify(data));
+               const li = document.createElement('contenedor');
              img2.innerHTML = ` <p id=${p.descrip}></p><img src="${p.img}"></img></p>`;
-                console.log(p.descrip)
-              // listTasks.appendChild(li);
-              
-            
+             par.innerHTML = `<div class=".contenedor2"><p> id=${2+2}</p></div>`;
+              listTasks.appendChild(li);
+           
              
        });
                
@@ -98,14 +99,21 @@ function actualizarcontador(contador){
     console.log("cabr"+contador)
        return contador
 }
+function Guardartodolstore(per){
+let myarray=JSOM.parse(localStorege.getItem("pepe"))
+myarray.push(per)
+let  perarrayjsom =JSOM.stringify(myarray)
+localStorage.setItem('pepe',perarray)
 
-function showContent() {
-    element = document.getElementById("content");
-    check = document.getElementById("check");
-    if (check.checked) {
-        element.style.display='block';
-    }
-    else {
-        element.style.display='none';
-    }
 }
+
+// function showContent() {
+//     element = document.getElementById("content");
+//     check = document.getElementById("check");
+//     if (check.checked) {
+//         element.style.display='block';
+//     }
+//     else {
+//         element.style.display='none';
+//     }
+// }
