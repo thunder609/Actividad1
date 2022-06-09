@@ -2,7 +2,7 @@ export var perso =[
  
     {          id:0,
         name:"No hay MUñeco",
-        descrip:'Golem: Es lento, pero persistente, y solo ataca las estructuras. Cuando se destruye, explota y se convierte en dos golemitas que infligen daño en área. Gólem es una carta de rareza épica de Clash Royale que puede obtenerse a partir de la arena 3.',
+        descrip:'',
         img:'',
     },
 {          id:1,
@@ -22,8 +22,5 @@ export var perso =[
                descrip:'Se puede utilizar como tanque para tropas más pequeñas como los Duendes. Es una gran carta para usar al frente de un mini-ataque. Tiene una gran sinergia en particular con los mazos de carnada de hechizos, y con el Barril de duendes, además es también común en mazos de Bait junto a la Valquiria.',
                img:'../Imagenes/caballero.png',
 }
-
-   
  
-
 ]
