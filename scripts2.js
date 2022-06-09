@@ -1,12 +1,14 @@
 
 import  {perso as per} from './data/datos.js'
-const listTasks = document.querySelector('.list-tasks p');
-const message = document.querySelector('.list-tasks');
+//const listTasks = document.querySelector('.list-tasks p');
+//const message = document.querySelector('.list-tasks');
 let img2=document.getElementById('img2') 
 let par = document.getElementById('parrafo'); 
-let coc = document.querySelector('.contenedor');     
+let coc = document.querySelector('.contenedor'); 
+let coc2 = document.querySelector('.contenedor2');      
 const img =document.getElementById('img')
 let atras =document.querySelector('.atras')
+let salir =document.querySelector('.salir')
 let next =document.querySelector('.adelante')
 let boton=document.querySelector('.botond')
 let data=[]
@@ -22,20 +24,21 @@ function verMunecos(person)
     let item = per[person]
     img.src = item.img
      boton.textContent=item.name
-     par.textContent=item.descrip
+    // par.textContent=item.descrip
      //console.log("vergacion"+par.textContent)
      
  //   console.log(boton.id)
 }
+
 next.addEventListener('click', ()=>{
         
 
-        contItem++;
-    let    n=per.length-1
-  
+        
+   // let    n=per.length-1
+   contItem++;
        if(contItem>per.length -1)
         {
-            
+        
               console.log("hola1"+contItem)
               console.log("holavector"+per.length)      
         contItem=0;   
@@ -81,22 +84,33 @@ boton.addEventListener('click', () => {
   
    let data=[]
     coc.style.display='none'; 
+    salir.style.display='none'
     let ac=actualizarcontador(contItem)
-            let p = per.find( (e)=> e.id ==ac );
-              data.push(p)
+            let p = per.find( (e)=> e.id ==ac );                        
+                        
+                  data=p
               localStorage.setItem('per', JSON.stringify(data));
                const li = document.createElement('contenedor');
-             img2.innerHTML = ` <p id=${p.descrip}></p><img src="${p.img}"></img></p>`;
-             par.innerHTML = `<div class=".contenedor2"><p> id=${2+2}</p></div>`;
-              listTasks.appendChild(li);
-           
+             img2.innerHTML = ` <p id="parrafo"></p><img src="${p.img}"></img>${p.descrip}</p>`;
+            par.innerHTML=`<p>${p.descrip}</p>`
+            console.log("chequeando"+p.descrip)
+             // listTasks.appendChild(li);
+            
              
        });
+       salir.addEventListener('click', ()=>{
+         coc.style.display='true'; 
+         coc2.style.display='none'; 
+         
+        
+            
+         
+      })
                
 
      
 function actualizarcontador(contador){
-    console.log("cabr"+contador)
+    console.log("iterando"+contador)
        return contador
 }
 function Guardartodolstore(per){
