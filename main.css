@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+   
+    font-family: Arial, sans-serif; 
+  
+ 
+}
+
+
+
+body{
+   
+    background: url("../Imagenes/background.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 350px;
+     padding-top: 150px;
+    justify-content: center;}
+ 
+
+.contenedor{
+    background-color: #ffff;
+   padding-top:90px;
+   display: flex;
+   border-radius: 40px;
+   width: 550px;
+   height: 550px;
+   padding-inline-end: 200px;
+   align-items:flex-start;
+   
+   padding-bottom: 200px;
+  
+    position: absolute;
+    border:10px solid;
+ 
+
+    
+}
+img{  
+    object-fit:fill;
+    background: #ffff;
+    margin-left:90px;
+    padding-top: 40px;
+   width: 350px;
+   height: 350px;
+   
+   align-items: center;
+ 
+}
+.object-fit{
+   object-fit: fill;
+}
+.contendor2  {
+    padding-top:90px;
+    display: flex;
+    border-radius: 40px;
+    width: 550px;
+    height: 550px;
+    padding-inline-end: 200px;
+    align-items:flex-start;
+    
+    padding-bottom: 200px;
+   
+     position: absolute;
+     border:10px solid;
+  
+ 
+} 
+
+}
+
+.contenedor2 img2{   
+   
+    background: #ffff;
+    margin-left:90px;
+    padding-top: 100px;
+   width: 500px;
+   height: 350px;
+   border-bottom: 20px; 
+   border-radius:  50px ; 
+ ;
+}
+.boton{
+     display:inline-flex;       
+       font-size: 40px;
+    width:50px;
+    margin-top: 200px;
+    height: 50px;
+    line-height: 30px;
+    border-radius: 50%;
+
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    color:rgb(17, 13, 13);
+    box-shadow: 0 0 10 px rbga(255,255,255,.6);
+     -webkit-transition: all .3s ease;
+     -o-transition: all .3s ease;
+     transition: all .3s ease;
+
+}
+.botond{
+    position: absolute;
+    z-index:auto;
+
+   margin-left: 350px; 
+  
+margin-top: 350px;
+     background: rgb(13, 17, 223);
+     
+}
+.exit{
+    
+    position: absolute;
+    z-index:auto;
+   display:block;
+   margin-left: 350px; 
+  
+margin-top: 350px;
+     background: rgb(226, 141, 124);
+     
+}
+.boton:hover{
+    cursor:pointer;
+    transform: scale(1.2,1.2) ;}
+    .atras{
+        left:18%;
+        top:calc(50%-70%)
+    }
+    .adelante{
+       right:18%;
+        top:calc(50%-70%)
+    }
