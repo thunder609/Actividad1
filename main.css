@@ -13,7 +13,7 @@
 
 body{
    
-    background: url("./Imagenes/background.png");
+    background: url("Imagenes/background.png");
     display: flex;
     flex-direction: column;
     align-items: center;
