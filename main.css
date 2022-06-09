@@ -51,7 +51,9 @@ img{
    align-items: center;
  
 }
-
+.object-fit{
+   object-fit: fill;
+}
 .contendor2  {
     padding-top:90px;
     display: flex;
