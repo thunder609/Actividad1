@@ -55,19 +55,23 @@ img{
    object-fit: fill;
 }
 .contendor2  {
-    padding-top:90px;
-    display: flex;
-    border-radius: 40px;
-    width: 550px;
-    height: 550px;
-    padding-inline-end: 200px;
-    align-items:flex-start;
-    
-    padding-bottom: 200px;
+    background-color: rgb(59, 129, 182);
+   padding-top:90px;
+   display: flex;
+   border-radius: 40px;
+   width: 550px;
+   height: 550px;
+   padding-inline-end: 200px;
+   align-items:flex-start;
    
-     position: absolute;
-     border:10px solid;
+   padding-bottom: 200px;
   
+    position: absolute;
+    border:10px solid;
+ 
+
+    
+
  
 } 
 
@@ -84,6 +88,11 @@ img{
    border-radius:  50px ; 
  
 }
+#p {
+    display:block;
+    
+
+}
 .boton{
      display:inline-flex;       
        font-size: 40px;
@@ -92,7 +101,7 @@ img{
     height: 50px;
     line-height: 30px;
     border-radius: 50%;
-
+    background:  rgba(18, 46, 205, 0.83);
     text-align: center;
     font-weight: bold;
     position: absolute;
@@ -104,6 +113,18 @@ img{
 
 }
 .botond{
+   
+       
+        border-radius: 8%;
+       
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+   
     position: absolute;
     z-index:auto;
      
