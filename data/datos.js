@@ -60,9 +60,9 @@ img:'./Imagenes/bruja.png',
                 },
                 {
                 id :10,
-                name:"Principe",
+                name:"Sneaky",
                 descrip:"Sneaky goblings: es una Súper Tropa basada en el Goblin. Se puede desbloquear aumentando el Goblin cuando el Goblin tiene al menos el nivel 7 y cuando el Ayuntamiento se actualiza al nivel 11 o superior.",
-                img:'./Imagenes/Principe.png',
+                img:'./Imagenes/Sneaky.jpg',
                 },
 
 ]

@@ -75,11 +75,11 @@ boton.addEventListener('click', () => {
     coc.style.display='none'; 
     let ac=actualizarcontador(contItem)
              const p = per.find( (e)=> e.id ==ac );
- 
+            
               localStorage.setItem('per', JSON.stringify(p));
-               const li = document.createElement('contenedor');
-              li.innerHTML = `${p.id} <p task-id="${p.id}"><img src="${p.name}"></img></p>`;
-   
+            //    const li = document.createElement('contenedor');
+            //   li.innerHTML = `${p.id} <p task-id="${p.id}"><img src="${p.name}"></img></p>`;
+            div
                listTasks.appendChild(li);
                beark;
             

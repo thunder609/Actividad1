@@ -21,9 +21,13 @@ body{
      padding-top: 150px;
     justify-content: center;}
  
+#principal{
+    display:-ms-flexbox;
+    align-items: center;
 
+}
 .contenedor{
-    background-color: #ffff;
+    /* background-color: #ffff;
    padding-top:90px;
    display: flex;
    border-radius: 40px;
@@ -35,8 +39,20 @@ body{
    padding-bottom: 200px;
   
     position: absolute;
-    border:10px solid;
- 
+    border:10px solid; */
+    background-color: #ffff;
+    padding-top:90px;
+    display: flex;
+    border-radius: 40px;
+    width: 550px;
+    height: 550px;
+    padding-inline-end: 200px;
+    align-items:flex-start;
+    
+    padding-bottom: 200px;
+   
+     position: absolute;
+     border:10px solid;
 
     
 }
@@ -55,7 +71,7 @@ img{
    object-fit: fill;
 }
 .contendor2  {
-    background-color: rgb(59, 129, 182);
+    /* background-color: rgb(59, 129, 182);
    padding-top:90px;
    display: flex;
    border-radius: 40px;
@@ -68,7 +84,20 @@ img{
   
     position: absolute;
     border:10px solid;
- 
+  */
+  background-color: #ffff;
+   padding-top:90px;
+   display: flex;
+   border-radius: 40px;
+   width: 550px;
+   height: 550px;
+   padding-inline-end: 200px;
+   align-items:flex-start;
+   
+   padding-bottom: 200px;
+  
+    position: absolute;
+    border:10px solid;
 
     
 
@@ -77,15 +106,17 @@ img{
 
 
 
-.contenedor2 img2{   
+ img2{   
    
-    background: #ffff;
+    background: rgb(236, 19, 19);
+    object-fit:contain;
+   
     margin-left:90px;
-    padding-top: 100px;
-   width: 500px;
+    padding-top: 40px;
+   width: 350px;
    height: 350px;
-   border-bottom: 20px; 
-   border-radius:  50px ; 
+   
+   align-items: center;
  
 }
 #p {

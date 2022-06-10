@@ -27,7 +27,7 @@ function verMunecos(person)
      boton.textContent=item.name
     // par.textContent=item.descrip
      //console.log("vergacion"+par.textContent)
-     
+     salir.style.display='none'
  //   console.log(boton.id)
 }
 
@@ -85,30 +85,32 @@ boton.addEventListener('click', () => {
   
    let data=[]
     coc.style.display='none'; 
-    salir.style.display='none'
+    
+    
     let ac=actualizarcontador(contItem)
             let p = per.find( (e)=> e.id ==ac );                        
                         
                   data=p
-              localStorage.setItem('per', JSON.stringify(data));
-               const li = document.createElement('contenedor');
-             img2.innerHTML = ` <p id="parrafo"></p><img src="${p.img}"></img>${p.descrip}</p>`;
-            par.innerHTML=`<p  >${p.descrip}</p>`
+            //  localStorage.setItem('per', JSON.stringify(data));
+           //    const li = document.createElement('contenedor2');
+             img2.innerHTML = `<div class=contenedor2></div> <p id="parrafo">${p.descrip}</p><img src="${p.img}"><br></p>
+             <buttom class="boton salir" onclick=${salird()} >Return</button><div class=contenedor2>`;
+            par.innerHTML=`<div class=contenedor2><p  >${p.descrip}</p>
+            </div>`
+         
             console.log("chequeando"+p.descrip)
              // listTasks.appendChild(li);
-           
+             
              
        });
-       salir.addEventListener('click', ()=>{
-         coc.style.display='true'; 
-         coc2.style.display='none'; 
-            
+       function salird(){
+         
+        verMunecos(contItem);
+       
             
          
-      })
-  function crearParradescri(){
-
-  }             
+      }
+               
 
      
 
@@ -129,16 +131,3 @@ localStorage.setItem('pepe',perarray)
 //         element.style.display='none';
 //     }
 // }
-
-function localstoreperonajes(){
-for(var i = 0; i < per.length; i++) {              
-  var clave = per.id;
-  var personaje = $.parseJSON(localStorage.getItem(clave));
-
-    
-    estudianteMayor = personaje
-  
-}
-alert(estudianteMayor.nota + " " + estudianteMayor.nombre);
-};
-localstoreperonajes();
